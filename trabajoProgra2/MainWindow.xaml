@@ -1,0 +1,47 @@
+﻿<Window x:Class="trabajoProgra2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:trabajoProgra2"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Title="login" Height="400" Width="500">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+                <GradientStop Color="#2A9C93" Offset="0.4629"></GradientStop>
+                <GradientStop Color="#4F64A1" Offset="0.652"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Margin="20,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition ></RowDefinition>
+
+
+            </Grid.RowDefinitions>
+            <Label Foreground="White" HorizontalAlignment="Center" FontWeight="ExtraBlack" FontSize="20">INICIO DE SESION</Label>
+            <Image Grid.Row="1"  Source="D:\logo3.jpg">
+
+            </Image>
+
+            <TextBox x:Name="txtUsuario" Grid.Row="2" Height="40" Background="#252629" Foreground="DimGray" FontSize="25" VerticalAlignment="Center" 
+                       Padding="5,0,0,0"  ></TextBox>
+
+            <TextBox x:Name="txtPassword" Grid.Row="3" Height="40" Background="#252629" Foreground="DimGray" FontSize="25" VerticalAlignment="Center" 
+                       Padding="5,0,0,0" ></TextBox>
+
+            <Button Grid.Row="4" Height="50" Width="300" Margin="0,5,0,0" Background="LightBlue" Foreground="White" FontSize="20" FontWeight="DemiBold"
+                   BorderThickness="0" Click="Button_Click">Inicio sesion</Button>
+            <Label Content="Usuario" HorizontalAlignment="Left" Margin="0,59,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.RowSpan="2" Foreground="White"/>
+            <Label Content="contraseña" HorizontalAlignment="Left" Margin="0,62,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-1.596,-0.231" Grid.RowSpan="2" Foreground="White"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
